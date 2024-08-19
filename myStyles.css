@@ -26,9 +26,19 @@ body {
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.row:first-child {
+    justify-content: flex-end;
 }
 
 button {
